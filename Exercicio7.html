@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste de Salário</title>
+</head>
+<body>
+    <script type="text/javascript">
+            var salario = parseInt(prompt("Funcionário, digite seu salário inicial: "));
+            function aumentasalario(antigo){
+                var aumento = 0
+                var atual = 0
+                if(antigo < 1280){
+                    aumento = 0.2
+                    atual = antigo * (1+aumento)
+                } 
+                else if(antigo > 1280 && antigo < 2540){
+                    aumento = 0.15
+                    atual = antigo * (1+aumento)
+                }
+                else if(antigo >= 2540 && antigo < 4160){
+                    aumento = 0.1
+                    atual = antigo * (1+aumento)
+                }
+                else if(antigo >= 4160){
+                    aumento = 0.05
+                    atual = antigo * (1+aumento)
+                }
+                console.log("Salário do funcionário era: " + antigo);
+                console.log("Seu salário aumentou percentual de: " + aumento);
+                console.log("O salário mudou para: " + (antigo + aumento));
+                console.log("Salário atual do funcionário é: " + atual);
+        }
+            aumentasalario(salario)
+    </script>
+</body>
+</html>

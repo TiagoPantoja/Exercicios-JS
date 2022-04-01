@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+ <input type="radio" name="converter" id="fahcel"/> Temperatura em Fahrenheit para Temperatura em Celsius <br/>
+ Conversão do Valor: <input id:"numero" type="number"> <br/>
+ <button onclick="conversor()"> Converter </button> <br/>
+ A temperatura convertida é: <div id="resultado" style='display:inline'></div><br/>
+
+ <script type="text/javascript">
+ function conversor(){
+  var fahrenheit = parseFloat(prompt("Temperatura em Fahrenheit: "));
+  var celsius = 5*(fahrenheit-32)/9;
+
+  document.write("Temperatura em Celsius é: " + celsius)
+}
+</script>
+</body>
+</html>

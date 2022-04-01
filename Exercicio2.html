@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Aluno</title>
+    Primeira Nota <input id="nota 1" type="number"> <br/>
+    Segunda Nota <input id="nota 2" type="number"> <br/>
+    Terceira Nota <input id="nota 3" type="number"> <br/>
+    Quarta Nota <input id="nota4" type="number"> <br/>
+    <button onclick="media()">Calcular Média</button>
+
+    <script type="text/javascript">
+     function media(){
+         var nota1 = parseFloat(document.getElementById("nota 1").value);
+         var nota2 = parseFloat(document.getElementById("nota 2").value);
+         var nota3 = parseFloat(document.getElementById("nota 3").value);
+         var nota4 = parseFloat(document.getElementById("nota 4").value);
+
+         var media = (nota1 + nota2 + nota3 + nota4)/4;
+
+         if (media >= 7 && media < 10) {
+            document.write("O aluno foi APROVADO no semestre! Sua média é: " + media);
+         } else {
+            document.write("O aluno está REPROVADO! Sua média é " + media);
+        }
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

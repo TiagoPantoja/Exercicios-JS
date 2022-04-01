@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passos para Atravessar Rua</title>
+    Posição Inicial <input id="posiçao" type="number"> <br/>
+    Chegada <input id="chegada" type="number"> <br/>
+    Passos <input id="passos" type="number"> <br/>
+    <button onclick="calcular">Calcular Passos</button>
+
+    <script type="text/javascript">
+    function quantidadepassos(){
+        var posiçaoinicial
+        var chegada
+        var passosinicial
+        var distancia
+        var passos
+
+        distancia = 1
+
+        posiçaoinicial = parseFloat(document.getElementById("posiçao").value)
+        chegada = parseFloat(document.getElementById("chegada").value)
+        passosinicial = parseFloat(document.getElementById("passos").value)
+
+        passos = chegada / distancia
+        if(passosinicial/2 >= passos) {
+            document.write("Atravessou a rua com ", passosinicial/2, "passos")
+        }
+        else{
+            document.write("Não atravessou a rua")
+            }
+        }
+    </script>
+</head>
+<body>
+        
+</body>
+</html>
